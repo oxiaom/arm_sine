@@ -1,0 +1,110 @@
+<RCC>
+    <qresource prefix="/">
+        <file>04.png</file>
+        <file>05.png</file>
+        <file>03.png</file>
+        <file>06.png</file>
+        <file>del.png</file>
+        <file>17.png</file>
+        <file>12.png</file>
+        <file>13.png</file>
+        <file>14.png</file>
+        <file>15.png</file>
+        <file>19.png</file>
+        <file>20.png</file>
+        <file>21.png</file>
+        <file>22.png</file>
+        <file>23.png</file>
+        <file>24.png</file>
+        <file>25.png</file>
+        <file>26.png</file>
+        <file>27.png</file>
+        <file>01.png</file>
+        <file>02.png</file>
+        <file>08.png</file>
+        <file>09.png</file>
+        <file>10.png</file>
+        <file>28.png</file>
+        <file>41.png</file>
+        <file>42.png</file>
+        <file>51.png</file>
+        <file>52.png</file>
+        <file>201.png</file>
+        <file>202.png</file>
+        <file>301.png</file>
+        <file>121.png</file>
+        <file>223.png</file>
+        <file>224.png</file>
+        <file>226.png</file>
+        <file>501.jpg</file>
+        <file>503.png</file>
+        <file>1005.png</file>
+        <file>1006.png</file>
+        <file>1007.png</file>
+        <file>1009.png</file>
+        <file>1010.png</file>
+        <file>1011.png</file>
+        <file>Q1.png</file>
+        <file>Q3.png</file>
+        <file>Q4.png</file>
+        <file>s1 (1).png</file>
+        <file>s1 (2).png</file>
+        <file>s1 (3).png</file>
+        <file>s1 (4).png</file>
+        <file>s1 (5).png</file>
+        <file>s1 (6).png</file>
+        <file>s1 (7).png</file>
+        <file>s1 (8).png</file>
+        <file>s1 (9).png</file>
+        <file>s1 (10).png</file>
+        <file>G1.png</file>
+        <file>G2.png</file>
+        <file>G3.png</file>
+        <file>G4.png</file>
+        <file>G5.png</file>
+        <file>G7.png</file>
+        <file>B2.jpg</file>
+        <file>B3.jpg</file>
+        <file>B4.jpg</file>
+        <file>B1.jpg</file>
+        <file>B9.png</file>
+        <file>B10.png</file>
+        <file>B11.png</file>
+        <file>B12.png</file>
+        <file>B13.png</file>
+        <file>B15.png</file>
+        <file>B16.png</file>
+        <file>B17.png</file>
+        <file>B18.png</file>
+        <file>B19.png</file>
+        <file>B20.png</file>
+        <file>B22.png</file>
+        <file>B23.png</file>
+        <file>B24.png</file>
+        <file>Btest.png</file>
+        <file>K1.png</file>
+        <file>K2.png</file>
+        <file>K3.png</file>
+        <file>K4.png</file>
+        <file>K5.png</file>
+        <file>K6.png</file>
+        <file>K7.png</file>
+        <file>K9.png</file>
+        <file>clear.png</file>
+        <file>load1.gif</file>
+        <file>03(1).png</file>
+        <file>03(2).png</file>
+        <file>02(1).png</file>
+        <file>02(2).png</file>
+        <file>01(2).png</file>
+        <file>01(3).png</file>
+        <file>gd2.png</file>
+        <file>gd3.png</file>
+        <file>KJ1.png</file>
+        <file>KJ2.png</file>
+        <file>l1.png</file>
+        <file>l2.png</file>
+        <file>l3.png</file>
+        <file>l4.png</file>
+    </qresource>
+</RCC>
