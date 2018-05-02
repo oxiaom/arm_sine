@@ -123,6 +123,7 @@ void Form_main::reflash_devices(){
 }
 void Form_main::reflash_fenqu(){
     QString url;
+    this->ui->pushButton_8->setDisabled(true);
     QHTTP *hp = new QHTTP(this);
     connect(hp,SIGNAL( over(QByteArray,int) ),this,SLOT( back_data_cmds(QByteArray,int) ) );
     QString  cmdline = "userid=";
@@ -205,10 +206,12 @@ void Form_main::back_data_cmds(QByteArray data,int code){
                     item->setData(10003,objary.at(i).toObject().value("fdevid"));   //fdevid
                     item->setData(10004,objary.at(i).toObject().value("snlist"));   //snlist
                 }
+                this->ui->pushButton_8->setDisabled(false);
             }else{
                 QMessageBox::information(NULL, QString("提示"), QString("服务器不在线"));
             }
         }
+
     }else if( code == 7 ){
 
         QJsonObject obj = this->bk->didi3(data);
@@ -353,7 +356,7 @@ void Form_main::on_pushButton_9_clicked()
 {
     QStringList list;
 
-    list.append( "32ffd405474d333344582143" );
+    list.append("32ffd405474d333344582143");
 
     qDebug()<<list;
     Dialog *dl = new Dialog(bk,6001,this);

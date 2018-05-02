@@ -30,7 +30,6 @@ waiting::waiting(BackSystm *bk, QListWidgetItem *item, bool isstart, int taskid,
         mv->start();
     }
 
-
 }
 
 waiting::~waiting()
@@ -47,7 +46,6 @@ void waiting::back_data_cmds( QByteArray data , int code ){
             if(obj.value("objt").toObject().value("res").toBool()){
                 qDebug()<<obj;
                 emit this->backres(1,this->item);
-                this->close();
             }
         }else{
             qDebug()<<"sth error";
@@ -66,6 +64,7 @@ void waiting::back_data_cmds( QByteArray data , int code ){
             emit this->backres(4,this->item);
         }
     }
+    this->close();
 }
 void waiting::error(QNetworkReply::NetworkError er){
     emit this->backres(5,this->item);
