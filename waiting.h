@@ -20,7 +20,7 @@ public:
     explicit waiting( BackSystm *bk ,QListWidgetItem *item , bool isstart , int taskid , QWidget *parent = 0 );
     ~waiting();
 signals:
-    void backres(int i,QListWidgetItem *item);
+    void backres(int i , QListWidgetItem *item);
 
 public slots:
     void back_data_cmds( QByteArray data , int code );

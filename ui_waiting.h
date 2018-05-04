@@ -16,41 +16,26 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QVBoxLayout>
-#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_waiting
 {
 public:
-    QWidget *verticalLayoutWidget;
-    QVBoxLayout *verticalLayout;
     QLabel *label;
-    QLabel *label_2;
 
     void setupUi(QDialog *waiting)
     {
         if (waiting->objectName().isEmpty())
             waiting->setObjectName(QStringLiteral("waiting"));
-        waiting->resize(415, 205);
-        verticalLayoutWidget = new QWidget(waiting);
-        verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(0, 0, 402, 201));
-        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(verticalLayoutWidget);
+        waiting->resize(480, 42);
+        waiting->setMaximumSize(QSize(480, 42));
+        label = new QLabel(waiting);
         label->setObjectName(QStringLiteral("label"));
-        label->setMinimumSize(QSize(400, 170));
-
-        verticalLayout->addWidget(label);
-
-        label_2 = new QLabel(verticalLayoutWidget);
-        label_2->setObjectName(QStringLiteral("label_2"));
-
-        verticalLayout->addWidget(label_2);
-
+        label->setGeometry(QRect(0, 0, 480, 42));
+        label->setMinimumSize(QSize(480, 42));
+        label->setMaximumSize(QSize(480, 42));
+        label->setStyleSheet(QStringLiteral("background-color: rgba(0, 0, 0, 0);"));
 
         retranslateUi(waiting);
 
@@ -61,7 +46,6 @@ public:
     {
         waiting->setWindowTitle(QApplication::translate("waiting", "Dialog", 0));
         label->setText(QApplication::translate("waiting", "TextLabel", 0));
-        label_2->setText(QApplication::translate("waiting", "TextLabel", 0));
     } // retranslateUi
 
 };

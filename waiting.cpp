@@ -1,14 +1,13 @@
 #include "waiting.h"
 #include "ui_waiting.h"
-
+#include <QMessageBox>
 waiting::waiting(BackSystm *bk, QListWidgetItem *item, bool isstart, int taskid, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::waiting)
 {
     ui->setupUi(this);
-    mv = new QMovie (":load1.gif");
+    mv = new QMovie (":load3.gif");
     this->ui->label->setMovie(mv);
-    //mv->start();
     this->taskid = taskid;
     this->bk = bk;
     this->item = item;
@@ -29,7 +28,6 @@ waiting::waiting(BackSystm *bk, QListWidgetItem *item, bool isstart, int taskid,
         htp->setting( url , 9 );
         mv->start();
     }
-
 }
 
 waiting::~waiting()
@@ -50,6 +48,7 @@ void waiting::back_data_cmds( QByteArray data , int code ){
         }else{
             qDebug()<<"sth error";
             emit this->backres(3,this->item);
+            QMessageBox::information(this, QString("提示"), QString("服务器链接数据有误:1007"));
         }
     }else if ( code == 9 ){
         QJsonObject obj = this->bk->didi3( data );
@@ -61,6 +60,7 @@ void waiting::back_data_cmds( QByteArray data , int code ){
             }
         }else{
             qDebug()<<"sth error";
+            QMessageBox::information(this, QString("提示"), QString("服务器错误:1008"));
             emit this->backres(4,this->item);
         }
     }
@@ -68,4 +68,5 @@ void waiting::back_data_cmds( QByteArray data , int code ){
 }
 void waiting::error(QNetworkReply::NetworkError er){
     emit this->backres(5,this->item);
+    QMessageBox::information(this, QString("提示"), QString("服务器链接数据有误:1009"));
 }

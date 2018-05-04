@@ -482,6 +482,7 @@ qrc_qq.cpp: qq.qrc \
 		1007.png \
 		01.png \
 		B20.png \
+		Jpuse.png \
 		l2.png \
 		201.png \
 		K4.png \
@@ -501,6 +502,7 @@ qrc_qq.cpp: qq.qrc \
 		clear.png \
 		l1.png \
 		15.png \
+		load3.gif \
 		B4.jpg \
 		K3.png \
 		03(1).png \
@@ -525,6 +527,7 @@ qrc_qq.cpp: qq.qrc \
 		1011.png \
 		14.png \
 		02(1).png \
+		load2.gif \
 		B3.jpg \
 		503.png \
 		K2.png \
@@ -4813,11 +4816,8 @@ waiting.o: waiting.cpp waiting.h \
 		/mnt/arm/include/QtWidgets/qbuttongroup.h \
 		/mnt/arm/include/QtWidgets/QHeaderView \
 		/mnt/arm/include/QtWidgets/qheaderview.h \
-		/mnt/arm/include/QtWidgets/QVBoxLayout \
-		/mnt/arm/include/QtWidgets/qboxlayout.h \
-		/mnt/arm/include/QtWidgets/qlayout.h \
-		/mnt/arm/include/QtWidgets/qlayoutitem.h \
-		/mnt/arm/include/QtWidgets/qgridlayout.h
+		/mnt/arm/include/QtWidgets/QMessageBox \
+		/mnt/arm/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o waiting.o waiting.cpp
 
 dialog_reset.o: dialog_reset.cpp dialog_reset.h \

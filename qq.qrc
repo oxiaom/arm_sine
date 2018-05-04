@@ -106,5 +106,8 @@
         <file>l2.png</file>
         <file>l3.png</file>
         <file>l4.png</file>
+        <file>Jpuse.png</file>
+        <file>load2.gif</file>
+        <file>load3.gif</file>
     </qresource>
 </RCC>

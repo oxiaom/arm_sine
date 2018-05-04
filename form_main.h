@@ -56,7 +56,7 @@ private slots:
 
 private:
 
-    QIcon ico,huatongico,huatongicodis,fenquico,fenquicodis,icondis;
+    QIcon ico,huatongico,huatongicodis,fenquico,fenquicodis,icondis,StartCoin,StopCoin;
     Ui::Form_main *ui;
     QMap<int , QListWidgetItem *>  labamap;
 

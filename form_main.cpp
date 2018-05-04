@@ -21,6 +21,9 @@ Form_main::Form_main(QWidget *parent) :
     icondis.addFile(":l1.png",QSize(80,80),QIcon::Normal);//掉线
     fenquico.addFile(":KJ1.png",QSize(80,80),QIcon::Normal);
     fenquico.addFile(":KJ2.png",QSize(80,80),QIcon::Selected);
+    StartCoin.addFile(":l3.png",QSize(80,80),QIcon::Normal);
+    StartCoin.addFile(":l2.png",QSize(80,80),QIcon::Selected);
+    StopCoin.addFile(":Jpuse.png",QSize(80,80),QIcon::Normal);
 
     ui->listWidget->setViewMode( QListView::IconMode );
     ui->listWidget->setDragEnabled( false );
@@ -39,7 +42,7 @@ Form_main::Form_main(QWidget *parent) :
     ui->listWidget_3->setDragEnabled( false );
     ui->listWidget_3->setIconSize( QSize( 150 , 150 ) );
     ui->listWidget_3->verticalScrollBar()->setStyleSheet( this->qss );
-    ui->listWidget_3->setSelectionMode( QAbstractItemView::MultiSelection );
+    ui->listWidget_3->setSelectionMode( QAbstractItemView::SingleSelection );
     ui->listWidget_3->setSpacing(2);
     connect(this->ui->listWidget_3,SIGNAL(itemClicked(QListWidgetItem*)),this,SLOT(dianbo_itemclicked(QListWidgetItem*)));
 
@@ -229,14 +232,14 @@ void Form_main::back_data_cmds(QByteArray data,int code){
                 ui->listWidget_3->clear();
 
                 for( int i = 0 ; i <  objary.count() ; i++ ){
-                    item = new QListWidgetItem(fenquico,objary.at(i).toObject().value("name").toString());
+                    item = new QListWidgetItem(StartCoin,objary.at(i).toObject().value("name").toString());
 
                     if(objary.at(i).toObject().value("status").toString().toInt() == 0 ){
                         qDebug()<<"set true";
-                        item->setIcon(ico);
+                        item->setIcon(StartCoin);
                     }else{
                         qDebug()<<"set false";
-                        item->setIcon(fenquico);
+                        item->setIcon(StopCoin);
                     }
 
                     qDebug()<<"add item s ->"<< item->isSelected() << objary.at(i).toObject().value("status").toString().toInt() ;
@@ -244,11 +247,7 @@ void Form_main::back_data_cmds(QByteArray data,int code){
                     item->setData(10000,objary.at(i).toObject().value("userid").toString().toInt());       //userid
                     item->setData(10001,objary.at(i).toObject().value("idstask").toString().toInt());      //fdevid
                     item->setData(10002,objary.at(i).toObject().value("status").toString().toInt());       //status
-
-
                 }
-
-
             }else{
                 QMessageBox::information(this, QString("提示"), QString("服务器不在线"));
             }
@@ -283,11 +282,11 @@ void Form_main::dianbo_itemclicked(QListWidgetItem *item){
 void Form_main::wait_res( int res,QListWidgetItem *item ){
     if(res == 1){      // 开始成功
         qDebug()<<"change coin to stop v";
-        item->setIcon(fenquico);//换成结束的图标
+        item->setIcon(StopCoin);//换成结束的图标
         item->setData(10002,1);
     }else if(res == 2){//结束成功
         qDebug()<<"change coin to start v";
-        item->setIcon(ico); //换成开始的图标
+        item->setIcon(StartCoin); //换成开始的图标
         item->setData(10002,0);
     }else if(res == 3){//开始失败
 

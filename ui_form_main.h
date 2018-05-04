@@ -166,7 +166,7 @@ public:
 
         retranslateUi(Form_main);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(Form_main);
