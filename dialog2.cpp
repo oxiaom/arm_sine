@@ -9,10 +9,10 @@ Dialog2::Dialog2(QWidget *parent) :
     ui(new Ui::Dialog2)
 {
     ui->setupUi(this);
-    ico.addFile(":01.png",QSize(98,98),QIcon::Normal);
-    ico.addFile(":02.png",QSize(98,98),QIcon::Selected);
+    ico.addFile(":01.png",QSize(80,80),QIcon::Normal);
+    ico.addFile(":02.png",QSize(80,80),QIcon::Selected);
 
-    icondis.addFile(":KJ1.png",QSize(98,98),QIcon::Normal);
+    icondis.addFile(":KJ1.png",QSize(80,80),QIcon::Normal);
     fenquico.addFile(":KJ1.png",QSize(80,80),QIcon::Normal);
     fenquico.addFile(":KJ2.png",QSize(80,80),QIcon::Selected);
 

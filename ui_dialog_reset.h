@@ -30,12 +30,23 @@ public:
         if (Dialog_reset->objectName().isEmpty())
             Dialog_reset->setObjectName(QStringLiteral("Dialog_reset"));
         Dialog_reset->resize(324, 121);
+        Dialog_reset->setStyleSheet(QStringLiteral("border-image: url(:/K1.png);"));
         pushButton = new QPushButton(Dialog_reset);
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(40, 30, 91, 51));
+        pushButton->setStyleSheet(QLatin1String(" \n"
+"QPushButton{color: rgb(255, 255, 255);font: 90 16pt \"Aharoni\";  border-radius:10px;}\n"
+"QPushButton{border-image: url(://K7.png);  border-radius:10px;}\n"
+"QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}"));
         pushButton_2 = new QPushButton(Dialog_reset);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
         pushButton_2->setGeometry(QRect(160, 30, 111, 51));
+        pushButton_2->setStyleSheet(QLatin1String(" \n"
+"QPushButton{color: rgb(255, 255, 255);font: 90 16pt \"Aharoni\";  border-radius:10px;}\n"
+"QPushButton{border-image: url(://KR.png);  border-radius:10px;}\n"
+"QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}"));
 
         retranslateUi(Dialog_reset);
 

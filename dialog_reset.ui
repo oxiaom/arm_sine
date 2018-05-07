@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/K1.png);</string>
+  </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
@@ -21,6 +24,13 @@
      <width>91</width>
      <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> 
+QPushButton{color: rgb(255, 255, 255);font: 90 16pt &quot;Aharoni&quot;;  border-radius:10px;}
+QPushButton{border-image: url(://K7.png);  border-radius:10px;}
+QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  
+QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}</string>
    </property>
    <property name="text">
     <string>取消</string>
@@ -34,6 +44,13 @@
      <width>111</width>
      <height>51</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> 
+QPushButton{color: rgb(255, 255, 255);font: 90 16pt &quot;Aharoni&quot;;  border-radius:10px;}
+QPushButton{border-image: url(://KR.png);  border-radius:10px;}
+QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  
+QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}</string>
    </property>
    <property name="text">
     <string>确定</string>

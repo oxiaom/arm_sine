@@ -32,22 +32,23 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/K3.png);</string>
+    <string notr="true">border-image: url(:/BJ1.png);</string>
    </property>
    <widget class="QPushButton" name="pushButtonduidian">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>400</y>
-      <width>271</width>
-      <height>81</height>
+      <x>10</x>
+      <y>412</y>
+      <width>241</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{color: rgb(255, 255, 255);font: 90 22pt &quot;Aharoni&quot;;}
-QPushButton{border-image: url(://K7.png);}
-QPushButton:hover{border-image: url(:/K6.png);}  
-QPushButton:pressed{border-image: url(:/K6.png);}
+     <string notr="true">QPushButton{color: rgb(0, 0, 0);font: 90 22pt &quot;Aharoni&quot;;  }
+QPushButton{border-image: url(:/twhite.png);   }
+QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255);}  
+QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255); }
+
 </string>
     </property>
     <property name="text">
@@ -58,16 +59,16 @@ QPushButton:pressed{border-image: url(:/K6.png);}
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>400</y>
-      <width>251</width>
-      <height>81</height>
+      <y>412</y>
+      <width>241</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{color: rgb(255, 255, 255);font: 90 22pt &quot;Aharoni&quot;;}
-QPushButton{border-image: url(://K7.png);}
-QPushButton:hover{border-image: url(:/K6.png);}  
-QPushButton:pressed{border-image: url(:/K6.png);}
+     <string notr="true">QPushButton{color: rgb(0, 0, 0);font: 90 22pt &quot;Aharoni&quot;;}
+QPushButton{border-image: url(:/twhite.png);}
+QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255);}  
+QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255);}
 </string>
     </property>
     <property name="text">
@@ -77,17 +78,18 @@ QPushButton:pressed{border-image: url(:/K6.png);}
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>400</y>
-      <width>261</width>
-      <height>81</height>
+      <x>550</x>
+      <y>412</y>
+      <width>241</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{color: rgb(255, 255, 255);font: 90 22pt &quot;Aharoni&quot;;}
-QPushButton{border-image: url(://K7.png);}
-QPushButton:hover{border-image: url(:/K6.png);}  
-QPushButton:pressed{border-image: url(:/K6.png);}</string>
+     <string notr="true">QPushButton{color: rgb(0, 0, 0);font: 90 22pt &quot;Aharoni&quot;;}
+QPushButton{border-image: url(:/twhite.png);}
+QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255);}  
+QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255);}
+</string>
     </property>
     <property name="text">
      <string>资源点播</string>
@@ -105,7 +107,7 @@ QPushButton:pressed{border-image: url(:/K6.png);}</string>
     <property name="styleSheet">
      <string notr="true">font: 75 20pt &quot;Aharoni&quot;;
 color: rgb(255, 255, 255);
-border-image: url(:/K9.png);</string>
+border-image: url(:/B12.png);</string>
     </property>
     <property name="text">
      <string>菱声广播系统呼叫</string>
@@ -123,7 +125,7 @@ border-image: url(:/K9.png);</string>
     <property name="styleSheet">
      <string notr="true">font: 75 15pt &quot;Aharoni&quot;;
 color: rgb(255, 255, 255);
-border-image: url(:/K9.png);</string>
+border-image: url(:/B12.png);</string>
     </property>
     <property name="text">
      <string>编号：</string>
@@ -140,7 +142,7 @@ border-image: url(:/K9.png);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 75 15pt &quot;Aharoni&quot;;
-border-image: url(:/K9.png);
+border-image: url(:/B12.png);
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
@@ -157,7 +159,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/K1.png);</string>
+     <string notr="true">border-image: url(:/BKh.png);</string>
     </property>
     <property name="currentIndex">
      <number>2</number>
@@ -169,16 +171,18 @@ color: rgb(255, 255, 255);</string>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>640</x>
-        <y>20</y>
-        <width>161</width>
-        <height>101</height>
+        <x>670</x>
+        <y>80</y>
+        <width>121</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton{border-image: url(:/K7.png);} 
-QPushButton{color: rgb(255, 255, 255);font: 90 30pt &quot;Aharoni&quot;;}
-QPushButton:checked{border-image: url(:K6.png);}</string>
+       <string notr="true">QPushButton{color: rgb(0, 0, 0);font: 90 22pt &quot;Aharoni&quot;; border-radius:10px;}
+QPushButton{border-image: url(:/twhite.png);}
+QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}  
+QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}
+</string>
       </property>
       <property name="text">
        <string>全选</string>
@@ -195,12 +199,12 @@ QPushButton:checked{border-image: url(:K6.png);}</string>
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>641</width>
+        <width>661</width>
         <height>351</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QListWidget{font: 75 12pt &quot;Aharoni&quot;;color: rgb(155, 255, 250);border-image: url(:K9.png); margin-top:20px; margin-bottom:20px;margin-left:20px;margin-right:20px;}
+       <string notr="true">QListWidget{font: 75 12pt &quot;Aharoni&quot;;color: rgb(255, 255, 255);border-image: url(:B12.png); margin-top:20px; margin-bottom:20px;margin-left:20px;margin-right:20px;}
 
 QListWidget::Item{ margin-top:10px; margin-bottom:10px;margin-left:15px;margin-right:15px;}</string>
       </property>
@@ -208,17 +212,17 @@ QListWidget::Item{ margin-top:10px; margin-bottom:10px;margin-left:15px;margin-r
      <widget class="QPushButton" name="pushButton_5">
       <property name="geometry">
        <rect>
-        <x>640</x>
-        <y>240</y>
-        <width>161</width>
-        <height>101</height>
+        <x>670</x>
+        <y>230</y>
+        <width>121</width>
+        <height>111</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton{color: rgb(255, 255, 255);font: 90 30pt &quot;Aharoni&quot;;}
-QPushButton{border-image: url(://K7.png);}
-QPushButton:hover{border-image: url(:/K6.png);}  
-QPushButton:pressed{border-image: url(:/K6.png);}</string>
+       <string notr="true">QPushButton{color: rgb(255, 255, 255);font: 90 30pt &quot;Aharoni&quot;;  border-radius:10px;}
+QPushButton{border-image: url(://KR.png);  border-radius:10px;}
+QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  
+QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}</string>
       </property>
       <property name="text">
        <string>呼叫</string>
@@ -227,17 +231,18 @@ QPushButton:pressed{border-image: url(:/K6.png);}</string>
      <widget class="QPushButton" name="pushButton_6">
       <property name="geometry">
        <rect>
-        <x>640</x>
-        <y>130</y>
-        <width>161</width>
-        <height>101</height>
+        <x>670</x>
+        <y>150</y>
+        <width>121</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton{color: rgb(255, 255, 255);font: 90 30pt &quot;Aharoni&quot;;}
-QPushButton{border-image: url(://K7.png);}
-QPushButton:hover{border-image: url(:/K6.png);}  
-QPushButton:pressed{border-image: url(:/K6.png);}</string>
+       <string notr="true">QPushButton{color: rgb(0, 0, 0);font: 90 22pt &quot;Aharoni&quot;; border-radius:10px;}
+QPushButton{border-image: url(:/twhite.png);}
+QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}  
+QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}
+</string>
       </property>
       <property name="text">
        <string>刷新</string>
@@ -251,17 +256,17 @@ QPushButton:pressed{border-image: url(:/K6.png);}</string>
      <widget class="QPushButton" name="pushButton_7">
       <property name="geometry">
        <rect>
-        <x>640</x>
-        <y>190</y>
-        <width>161</width>
-        <height>151</height>
+        <x>670</x>
+        <y>230</y>
+        <width>121</width>
+        <height>111</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton{color: rgb(255, 255, 255);font: 90 30pt &quot;Aharoni&quot;;}
-QPushButton{border-image: url(://K7.png);}
-QPushButton:hover{border-image: url(:/K6.png);}  
-QPushButton:pressed{border-image: url(:/K6.png);}</string>
+       <string notr="true">QPushButton{color: rgb(255, 255, 255);font: 90 30pt &quot;Aharoni&quot;;  border-radius:10px;}
+QPushButton{border-image: url(://KR.png);  border-radius:10px;}
+QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  
+QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}</string>
       </property>
       <property name="text">
        <string>呼叫</string>
@@ -270,17 +275,18 @@ QPushButton:pressed{border-image: url(:/K6.png);}</string>
      <widget class="QPushButton" name="pushButton_8">
       <property name="geometry">
        <rect>
-        <x>640</x>
-        <y>40</y>
-        <width>161</width>
-        <height>141</height>
+        <x>670</x>
+        <y>20</y>
+        <width>121</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton{color: rgb(255, 255, 255);font: 90 30pt &quot;Aharoni&quot;;}
-QPushButton{border-image: url(://K7.png);}
-QPushButton:hover{border-image: url(:/K6.png);}  
-QPushButton:pressed{border-image: url(:/K6.png);}</string>
+       <string notr="true">QPushButton{color: rgb(0, 0, 0);font: 90 22pt &quot;Aharoni&quot;; border-radius:10px;}
+QPushButton{border-image: url(:/twhite.png);}
+QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}  
+QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}
+</string>
       </property>
       <property name="text">
        <string>编辑</string>
@@ -296,7 +302,9 @@ QPushButton:pressed{border-image: url(:/K6.png);}</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(:/K9.png);</string>
+       <string notr="true">QListWidget{font: 75 12pt &quot;Aharoni&quot;;color: rgb(255, 255, 255);border-image: url(:B12.png); margin-top:20px; margin-bottom:20px;margin-left:20px;margin-right:20px;}
+
+QListWidget::Item{ margin-top:10px; margin-bottom:10px;margin-left:15px;margin-right:15px;}</string>
       </property>
      </widget>
     </widget>
@@ -307,14 +315,16 @@ QPushButton:pressed{border-image: url(:/K6.png);}</string>
      <widget class="QListWidget" name="listWidget_3">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>10</x>
         <y>20</y>
-        <width>741</width>
-        <height>311</height>
+        <width>631</width>
+        <height>321</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 75 26pt &quot;Aharoni&quot;;</string>
+       <string notr="true">font: 75 26pt &quot;Aharoni&quot;;
+color: rgb(255, 255, 255);
+border-image: url(:/B12.png);</string>
       </property>
      </widget>
     </widget>

@@ -45,8 +45,12 @@ Dialog::Dialog(BackSystm *bk, QWidget *parent) :
     qDebug()<<"vl:"<<vl;
     this->ui->verticalSlider->setValue(vl);
     f.close();
-    ra= new RenderArea(this);
-    this->ui->verticalLayout->addWidget(ra);
+
+    mv = new QMovie (":load4.gif");
+    this->ui->label->setMovie(mv);
+    mv->start();
+    //ra= new RenderArea(this);
+    //this->ui->verticalLayout->addWidget(ra);
 
 }
 
@@ -103,8 +107,8 @@ Dialog::Dialog(BackSystm *bk , int localport ,QWidget *parent ):
     this->bk = bk;
     this->localport =  localport;
     this->sock->connectToHost(QHostAddress(bk->ip),41001);
-    ra= new RenderArea(this);
-    this->ui->verticalLayout->addWidget(ra);
+    //ra= new RenderArea(this);
+    //this->ui->verticalLayout->addWidget(ra);
 }
 
 Dialog::~Dialog()
@@ -174,9 +178,9 @@ void Dialog::rdy(){
      this->sock->readAll().size();
     QByteArray ba  = this->sock->readAll();
 
-    float s = rand()%100;
-    qDebug()<<s;
-    this->ra->setLevel(s/254.9);
+   // float s = rand()%100;
+   // qDebug()<<s;
+   // this->ra->setLevel(s/254.9);
 
 
 }

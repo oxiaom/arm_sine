@@ -6,132 +6,111 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>320</width>
-    <height>320</height>
+    <width>800</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"> 
-background-color: rgb(170, 209, 255);</string>
+   <string notr="true"> border-image: url(:/HJB2.png);</string>
   </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>160</y>
-     <width>131</width>
-     <height>130</height>
+     <x>630</x>
+     <y>340</y>
+     <width>151</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton{border-image: url(:/gd2.png);} 
-QPushButton:hover{border-image: url(:/gd3.png);}  
-QPushButton:pressed{border-image: url(:/gd3.png);}</string>
+    <string notr="true">QPushButton{color: rgb(255, 255, 255);font: 90 30pt &quot;Aharoni&quot;;  border-radius:10px;}
+QPushButton{border-image: url(://KR.png);  border-radius:10px;}
+QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  
+QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}</string>
    </property>
    <property name="text">
-    <string/>
+    <string>挂断</string>
    </property>
   </widget>
   <widget class="QSlider" name="verticalSlider">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>30</y>
-     <width>91</width>
-     <height>221</height>
+     <x>640</x>
+     <y>60</y>
+     <width>131</width>
+     <height>271</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QSlider::groove:vertical {  
-border: 1px solid #4A708B;  
-background: #C0C0C0;  
+border-image: url(:/B12.png);
+border: 2px solid #aaaaaa;  
+background: #aaaaaa00;  
 width: 30px;  
-border-radius: 1px;  
+border-radius: 15px;  
 padding-left:-1px;  
 padding-right:-1px;  
 padding-top:-1px;  
 padding-bottom:-1px;  
 }  
-  
+QSlider{   
+ 
+	border-image: url(:/B12.png);
+}  
+ 
 QSlider::sub-page:vertical {  
-background: #575757;  
-border: 2px solid #4A708B;  
-border-radius:0px;  
+background: #666666;  
+border-image: url(:/B12.png);
+
+border:2px solid #000000;  
+border-radius:16px;  
 }  
 QSlider::add-page:vertical {  
-background: qlineargradient(x1:0, y1:0, x2:0, y2:1,   
-    stop:0 #c4c4c4, stop:1 #B1B1B1);  
-background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,  
-    stop: 0 #5DCCFF, stop: 1 #1874CD);  
-border: 0px solid #777;  
-width: 20px;  
-border-radius: 2px;  
-}  
+background: #3da1e5; 
+border:2px solid #000000050;  
+border-radius:16px;  
+width:32px;  
+border-image: url(:/B12.png);
+ }  
 QSlider::handle:vertical   
-{  
-    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #45ADED,   
-				stop:0.778409 rgba(255, 255, 255, 255));  
+{
+border-image: url(:/B12.png);  
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.13, fx:0.5, fy:0.5, stop:0.6 #999999, stop:0.9 rgba(60, 60, 60, 255));  
   
-    height: 80px;  
+    height: 76px;
+    border:2px solid #000000;
     margin-left: -25px;  
     margin-right: -25px;  
-    border-radius: 40px;  
+    border-radius:40px;  
 }  
   
-QSlider::sub-page:vertical:disabled {  
-background: #00009C;  
-border-color: #999;  
-}  
-QSlider::add-page:vertical:disabled {  
-background: #eee;  
-border-color: #999;  
-}  
-QSlider::handle:vertical:disabled {  
-background: #eee;  
-border: 1px solid #aaa;  
-border-radius: 4px;  
-}  </string>
+</string>
    </property>
    <property name="maximum">
     <number>7</number>
    </property>
    <property name="value">
-    <number>7</number>
+    <number>3</number>
    </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>280</y>
-     <width>81</width>
-     <height>21</height>
+     <x>148</x>
+     <y>80</y>
+     <width>320</width>
+     <height>320</height>
     </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75 12pt &quot;Aharoni&quot;;
-color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
-    <string>麦克风音量</string>
+    <string/>
    </property>
-  </widget>
-  <widget class="QWidget" name="verticalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>80</y>
-     <width>131</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout"/>
   </widget>
  </widget>
  <resources/>

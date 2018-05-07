@@ -21,9 +21,9 @@
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>330</y>
+      <y>320</y>
       <width>211</width>
-      <height>51</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -31,7 +31,7 @@
 border-image: url(:/s1 (5).png);</string>
     </property>
     <property name="text">
-     <string>登录</string>
+     <string>登     录</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -430,7 +430,7 @@ QPushButton:pressed{border-image: url(:/s1 (3).png);}
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/K9.png);
+     <string notr="true">border-image: url(:/B12.png);
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">

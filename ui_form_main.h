@@ -55,113 +55,123 @@ public:
         widget = new QWidget(Form_main);
         widget->setObjectName(QStringLiteral("widget"));
         widget->setGeometry(QRect(0, 0, 801, 481));
-        widget->setStyleSheet(QStringLiteral("border-image: url(:/K3.png);"));
+        widget->setStyleSheet(QStringLiteral("border-image: url(:/BJ1.png);"));
         pushButtonduidian = new QPushButton(widget);
         pushButtonduidian->setObjectName(QStringLiteral("pushButtonduidian"));
-        pushButtonduidian->setGeometry(QRect(0, 400, 271, 81));
-        pushButtonduidian->setStyleSheet(QLatin1String("QPushButton{color: rgb(255, 255, 255);font: 90 22pt \"Aharoni\";}\n"
-"QPushButton{border-image: url(://K7.png);}\n"
-"QPushButton:hover{border-image: url(:/K6.png);}  \n"
-"QPushButton:pressed{border-image: url(:/K6.png);}\n"
+        pushButtonduidian->setGeometry(QRect(10, 412, 241, 61));
+        pushButtonduidian->setStyleSheet(QLatin1String("QPushButton{color: rgb(0, 0, 0);font: 90 22pt \"Aharoni\";  }\n"
+"QPushButton{border-image: url(:/twhite.png);   }\n"
+"QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255);}  \n"
+"QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255); }\n"
+"\n"
 ""));
         pushButton_2 = new QPushButton(widget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(280, 400, 251, 81));
-        pushButton_2->setStyleSheet(QLatin1String("QPushButton{color: rgb(255, 255, 255);font: 90 22pt \"Aharoni\";}\n"
-"QPushButton{border-image: url(://K7.png);}\n"
-"QPushButton:hover{border-image: url(:/K6.png);}  \n"
-"QPushButton:pressed{border-image: url(:/K6.png);}\n"
+        pushButton_2->setGeometry(QRect(280, 412, 241, 61));
+        pushButton_2->setStyleSheet(QLatin1String("QPushButton{color: rgb(0, 0, 0);font: 90 22pt \"Aharoni\";}\n"
+"QPushButton{border-image: url(:/twhite.png);}\n"
+"QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255);}  \n"
+"QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255);}\n"
 ""));
         pushButton_3 = new QPushButton(widget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(540, 400, 261, 81));
-        pushButton_3->setStyleSheet(QLatin1String("QPushButton{color: rgb(255, 255, 255);font: 90 22pt \"Aharoni\";}\n"
-"QPushButton{border-image: url(://K7.png);}\n"
-"QPushButton:hover{border-image: url(:/K6.png);}  \n"
-"QPushButton:pressed{border-image: url(:/K6.png);}"));
+        pushButton_3->setGeometry(QRect(550, 412, 241, 61));
+        pushButton_3->setStyleSheet(QLatin1String("QPushButton{color: rgb(0, 0, 0);font: 90 22pt \"Aharoni\";}\n"
+"QPushButton{border-image: url(:/twhite.png);}\n"
+"QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255);}  \n"
+"QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255);}\n"
+""));
         label = new QLabel(widget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(20, 10, 251, 31));
         label->setStyleSheet(QLatin1String("font: 75 20pt \"Aharoni\";\n"
 "color: rgb(255, 255, 255);\n"
-"border-image: url(:/K9.png);"));
+"border-image: url(:/B12.png);"));
         label_2 = new QLabel(widget);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setGeometry(QRect(290, 20, 54, 21));
         label_2->setStyleSheet(QLatin1String("font: 75 15pt \"Aharoni\";\n"
 "color: rgb(255, 255, 255);\n"
-"border-image: url(:/K9.png);"));
+"border-image: url(:/B12.png);"));
         label_3 = new QLabel(widget);
         label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(350, 20, 91, 21));
         label_3->setStyleSheet(QLatin1String("font: 75 15pt \"Aharoni\";\n"
-"border-image: url(:/K9.png);\n"
+"border-image: url(:/B12.png);\n"
 "color: rgb(255, 255, 255);"));
         stackedWidget = new QStackedWidget(widget);
         stackedWidget->setObjectName(QStringLiteral("stackedWidget"));
         stackedWidget->setGeometry(QRect(0, 50, 801, 351));
-        stackedWidget->setStyleSheet(QStringLiteral("border-image: url(:/K1.png);"));
+        stackedWidget->setStyleSheet(QStringLiteral("border-image: url(:/BKh.png);"));
         page = new QWidget();
         page->setObjectName(QStringLiteral("page"));
         page->setStyleSheet(QStringLiteral(""));
         pushButton = new QPushButton(page);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(640, 20, 161, 101));
-        pushButton->setStyleSheet(QLatin1String("QPushButton{border-image: url(:/K7.png);} \n"
-"QPushButton{color: rgb(255, 255, 255);font: 90 30pt \"Aharoni\";}\n"
-"QPushButton:checked{border-image: url(:K6.png);}"));
+        pushButton->setGeometry(QRect(670, 80, 121, 51));
+        pushButton->setStyleSheet(QLatin1String("QPushButton{color: rgb(0, 0, 0);font: 90 22pt \"Aharoni\"; border-radius:10px;}\n"
+"QPushButton{border-image: url(:/twhite.png);}\n"
+"QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}\n"
+""));
         pushButton->setCheckable(true);
         pushButton->setChecked(false);
         listWidget = new QListWidget(page);
         listWidget->setObjectName(QStringLiteral("listWidget"));
-        listWidget->setGeometry(QRect(0, 0, 641, 351));
-        listWidget->setStyleSheet(QLatin1String("QListWidget{font: 75 12pt \"Aharoni\";color: rgb(155, 255, 250);border-image: url(:K9.png); margin-top:20px; margin-bottom:20px;margin-left:20px;margin-right:20px;}\n"
+        listWidget->setGeometry(QRect(0, 0, 661, 351));
+        listWidget->setStyleSheet(QLatin1String("QListWidget{font: 75 12pt \"Aharoni\";color: rgb(255, 255, 255);border-image: url(:B12.png); margin-top:20px; margin-bottom:20px;margin-left:20px;margin-right:20px;}\n"
 "\n"
 "QListWidget::Item{ margin-top:10px; margin-bottom:10px;margin-left:15px;margin-right:15px;}"));
         pushButton_5 = new QPushButton(page);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
-        pushButton_5->setGeometry(QRect(640, 240, 161, 101));
-        pushButton_5->setStyleSheet(QLatin1String("QPushButton{color: rgb(255, 255, 255);font: 90 30pt \"Aharoni\";}\n"
-"QPushButton{border-image: url(://K7.png);}\n"
-"QPushButton:hover{border-image: url(:/K6.png);}  \n"
-"QPushButton:pressed{border-image: url(:/K6.png);}"));
+        pushButton_5->setGeometry(QRect(670, 230, 121, 111));
+        pushButton_5->setStyleSheet(QLatin1String("QPushButton{color: rgb(255, 255, 255);font: 90 30pt \"Aharoni\";  border-radius:10px;}\n"
+"QPushButton{border-image: url(://KR.png);  border-radius:10px;}\n"
+"QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}"));
         pushButton_6 = new QPushButton(page);
         pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
-        pushButton_6->setGeometry(QRect(640, 130, 161, 101));
-        pushButton_6->setStyleSheet(QLatin1String("QPushButton{color: rgb(255, 255, 255);font: 90 30pt \"Aharoni\";}\n"
-"QPushButton{border-image: url(://K7.png);}\n"
-"QPushButton:hover{border-image: url(:/K6.png);}  \n"
-"QPushButton:pressed{border-image: url(:/K6.png);}"));
+        pushButton_6->setGeometry(QRect(670, 150, 121, 51));
+        pushButton_6->setStyleSheet(QLatin1String("QPushButton{color: rgb(0, 0, 0);font: 90 22pt \"Aharoni\"; border-radius:10px;}\n"
+"QPushButton{border-image: url(:/twhite.png);}\n"
+"QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}\n"
+""));
         stackedWidget->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName(QStringLiteral("page_2"));
         page_2->setStyleSheet(QStringLiteral(""));
         pushButton_7 = new QPushButton(page_2);
         pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
-        pushButton_7->setGeometry(QRect(640, 190, 161, 151));
-        pushButton_7->setStyleSheet(QLatin1String("QPushButton{color: rgb(255, 255, 255);font: 90 30pt \"Aharoni\";}\n"
-"QPushButton{border-image: url(://K7.png);}\n"
-"QPushButton:hover{border-image: url(:/K6.png);}  \n"
-"QPushButton:pressed{border-image: url(:/K6.png);}"));
+        pushButton_7->setGeometry(QRect(670, 230, 121, 111));
+        pushButton_7->setStyleSheet(QLatin1String("QPushButton{color: rgb(255, 255, 255);font: 90 30pt \"Aharoni\";  border-radius:10px;}\n"
+"QPushButton{border-image: url(://KR.png);  border-radius:10px;}\n"
+"QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}"));
         pushButton_8 = new QPushButton(page_2);
         pushButton_8->setObjectName(QStringLiteral("pushButton_8"));
-        pushButton_8->setGeometry(QRect(640, 40, 161, 141));
-        pushButton_8->setStyleSheet(QLatin1String("QPushButton{color: rgb(255, 255, 255);font: 90 30pt \"Aharoni\";}\n"
-"QPushButton{border-image: url(://K7.png);}\n"
-"QPushButton:hover{border-image: url(:/K6.png);}  \n"
-"QPushButton:pressed{border-image: url(:/K6.png);}"));
+        pushButton_8->setGeometry(QRect(670, 20, 121, 51));
+        pushButton_8->setStyleSheet(QLatin1String("QPushButton{color: rgb(0, 0, 0);font: 90 22pt \"Aharoni\"; border-radius:10px;}\n"
+"QPushButton{border-image: url(:/twhite.png);}\n"
+"QPushButton:hover{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K7.png);color: rgb(255, 255, 255); border-radius:10px;}\n"
+""));
         listWidget_2 = new QListWidget(page_2);
         listWidget_2->setObjectName(QStringLiteral("listWidget_2"));
         listWidget_2->setGeometry(QRect(0, 0, 641, 351));
-        listWidget_2->setStyleSheet(QStringLiteral("border-image: url(:/K9.png);"));
+        listWidget_2->setStyleSheet(QLatin1String("QListWidget{font: 75 12pt \"Aharoni\";color: rgb(255, 255, 255);border-image: url(:B12.png); margin-top:20px; margin-bottom:20px;margin-left:20px;margin-right:20px;}\n"
+"\n"
+"QListWidget::Item{ margin-top:10px; margin-bottom:10px;margin-left:15px;margin-right:15px;}"));
         stackedWidget->addWidget(page_2);
         page_4 = new QWidget();
         page_4->setObjectName(QStringLiteral("page_4"));
         page_4->setStyleSheet(QStringLiteral(""));
         listWidget_3 = new QListWidget(page_4);
         listWidget_3->setObjectName(QStringLiteral("listWidget_3"));
-        listWidget_3->setGeometry(QRect(30, 20, 741, 311));
-        listWidget_3->setStyleSheet(QStringLiteral("font: 75 26pt \"Aharoni\";"));
+        listWidget_3->setGeometry(QRect(10, 20, 631, 321));
+        listWidget_3->setStyleSheet(QLatin1String("font: 75 26pt \"Aharoni\";\n"
+"color: rgb(255, 255, 255);\n"
+"border-image: url(:/B12.png);"));
         stackedWidget->addWidget(page_4);
 
         retranslateUi(Form_main);

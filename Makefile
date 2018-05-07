@@ -484,6 +484,7 @@ qrc_qq.cpp: qq.qrc \
 		B20.png \
 		Jpuse.png \
 		l2.png \
+		load4.gif \
 		201.png \
 		K4.png \
 		22.png \
@@ -494,7 +495,9 @@ qrc_qq.cpp: qq.qrc \
 		05.png \
 		B24.png \
 		G1.png \
+		BKh.png \
 		26.png \
+		BJ1.png \
 		226.png \
 		B13.png \
 		1006.png \
@@ -519,6 +522,7 @@ qrc_qq.cpp: qq.qrc \
 		501.jpg \
 		25.png \
 		03(2).png \
+		KR.png \
 		del.png \
 		B12.png \
 		1005.png \
@@ -544,6 +548,8 @@ qrc_qq.cpp: qq.qrc \
 		K6.png \
 		24.png \
 		02(2).png \
+		twhite.png \
+		HJB2.png \
 		224.png \
 		B11.png \
 		gd3.png \
@@ -557,6 +563,7 @@ qrc_qq.cpp: qq.qrc \
 		G3.png \
 		28.png \
 		KJ1.png \
+		Yellow.png \
 		B15.png \
 		02.png \
 		l3.png \
@@ -564,7 +571,8 @@ qrc_qq.cpp: qq.qrc \
 		202.png \
 		K5.png \
 		23.png \
-		G7.png
+		G7.png \
+		BJBEIJING.png
 	/mnt/arm/bin/rcc -name qq qq.qrc -o qrc_qq.cpp
 
 compiler_moc_header_make_all: moc_mainwindow.cpp moc_backsystm.cpp moc_dialog.cpp moc_dialog_pad.cpp moc_dialog2.cpp moc_dialog3.cpp moc_form_main.cpp moc_formwelcome.cpp moc_initsys.cpp moc_qhttp.cpp moc_waiting.cpp moc_dialog_reset.cpp
@@ -712,7 +720,6 @@ moc_mainwindow.cpp: /mnt/arm/include/QtWidgets/QMainWindow \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -722,6 +729,7 @@ moc_mainwindow.cpp: /mnt/arm/include/QtWidgets/QMainWindow \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -932,7 +940,6 @@ moc_backsystm.cpp: /mnt/arm/include/QtCore/QObject \
 		/mnt/arm/include/QtNetwork/QTcpSocket \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -942,6 +949,7 @@ moc_backsystm.cpp: /mnt/arm/include/QtCore/QObject \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -1092,7 +1100,6 @@ moc_dialog.cpp: /mnt/arm/include/QtWidgets/QDialog \
 		/mnt/arm/include/QtWidgets/qtabbar.h \
 		/mnt/arm/include/QtWidgets/qrubberband.h \
 		dialog.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -1102,6 +1109,7 @@ moc_dialog.cpp: /mnt/arm/include/QtWidgets/QDialog \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -1392,7 +1400,6 @@ moc_dialog2.cpp: /mnt/arm/include/QtWidgets/QDialog \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -1402,6 +1409,7 @@ moc_dialog2.cpp: /mnt/arm/include/QtWidgets/QDialog \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -1583,7 +1591,6 @@ moc_dialog3.cpp: /mnt/arm/include/QtWidgets/QDialog \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -1593,6 +1600,7 @@ moc_dialog3.cpp: /mnt/arm/include/QtWidgets/QDialog \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -1773,7 +1781,6 @@ moc_form_main.cpp: /mnt/arm/include/QtWidgets/QWidget \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -1783,6 +1790,7 @@ moc_form_main.cpp: /mnt/arm/include/QtWidgets/QWidget \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -1963,7 +1971,6 @@ moc_formwelcome.cpp: /mnt/arm/include/QtWidgets/QWidget \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -1973,6 +1980,7 @@ moc_formwelcome.cpp: /mnt/arm/include/QtWidgets/QWidget \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -2512,7 +2520,6 @@ moc_dialog_reset.cpp: /mnt/arm/include/QtWidgets/QDialog \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -2522,6 +2529,7 @@ moc_dialog_reset.cpp: /mnt/arm/include/QtWidgets/QDialog \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -2783,7 +2791,6 @@ main.o: main.cpp mainwindow.h \
 		/mnt/arm/include/QtNetwork/QTcpSocket \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -2793,6 +2800,7 @@ main.o: main.cpp mainwindow.h \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -2976,7 +2984,6 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		/mnt/arm/include/QtNetwork/QTcpSocket \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -2986,6 +2993,7 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -3161,7 +3169,6 @@ backsystm.o: backsystm.cpp backsystm.h \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -3171,6 +3178,7 @@ backsystm.o: backsystm.cpp backsystm.h \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -3410,11 +3418,6 @@ dialog.o: dialog.cpp dialog.h \
 		/mnt/arm/include/QtWidgets/qpushbutton.h \
 		/mnt/arm/include/QtWidgets/qabstractbutton.h \
 		/mnt/arm/include/QtWidgets/QSlider \
-		/mnt/arm/include/QtWidgets/QVBoxLayout \
-		/mnt/arm/include/QtWidgets/qboxlayout.h \
-		/mnt/arm/include/QtWidgets/qlayout.h \
-		/mnt/arm/include/QtWidgets/qlayoutitem.h \
-		/mnt/arm/include/QtWidgets/qgridlayout.h \
 		/mnt/arm/include/QtCore/QProcess \
 		/mnt/arm/include/QtCore/qprocess.h \
 		/mnt/arm/include/QtCore/QThread \
@@ -3719,7 +3722,6 @@ dialog2.o: dialog2.cpp dialog2.h \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -3729,6 +3731,7 @@ dialog2.o: dialog2.cpp dialog2.h \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -3932,7 +3935,6 @@ dialog3.o: dialog3.cpp dialog3.h \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -3942,6 +3944,7 @@ dialog3.o: dialog3.cpp dialog3.h \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -4175,7 +4178,6 @@ form_main.o: form_main.cpp form_main.h \
 		/mnt/arm/include/QtNetwork/QTcpSocket \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -4185,6 +4187,7 @@ form_main.o: form_main.cpp form_main.h \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -4364,7 +4367,6 @@ formwelcome.o: formwelcome.cpp formwelcome.h \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -4374,6 +4376,7 @@ formwelcome.o: formwelcome.cpp formwelcome.h \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \
@@ -4963,7 +4966,6 @@ dialog_reset.o: dialog_reset.cpp dialog_reset.h \
 		/mnt/arm/include/QtNetwork/qtcpsocket.h \
 		/mnt/arm/include/QtNetwork/QUdpSocket \
 		/mnt/arm/include/QtNetwork/qudpsocket.h \
-		waiting.h \
 		/mnt/arm/include/QtGui/QMovie \
 		/mnt/arm/include/QtGui/qmovie.h \
 		/mnt/arm/include/QtGui/qimagereader.h \
@@ -4973,6 +4975,7 @@ dialog_reset.o: dialog_reset.cpp dialog_reset.h \
 		/mnt/arm/include/QtCore/qplugin.h \
 		/mnt/arm/include/QtCore/qpointer.h \
 		/mnt/arm/include/QtCore/qfactoryinterface.h \
+		waiting.h \
 		/mnt/arm/include/QtWidgets/QLabel \
 		/mnt/arm/include/QtWidgets/qlabel.h \
 		qhttp.h \

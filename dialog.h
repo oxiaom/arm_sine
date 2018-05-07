@@ -6,6 +6,7 @@
 #include <QTcpSocket>
 #include <QUdpSocket>
 #include "backsystm.h"
+#include <QMovie>
 class BackSystm;
 namespace Ui {
     class Dialog;
@@ -54,7 +55,8 @@ private:
     Ui::Dialog *ui;
     QTcpSocket *sock;
     QUdpSocket *udpk;
-    RenderArea *ra;
+    QMovie *mv;
+    //RenderArea *ra;
     int localport;
     bool is_frist=true;
 };

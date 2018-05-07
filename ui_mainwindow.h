@@ -59,7 +59,7 @@ public:
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(70, 330, 211, 51));
+        pushButton->setGeometry(QRect(70, 320, 211, 81));
         pushButton->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);font: 90 22pt \"Aharoni\"; \n"
 "border-image: url(:/s1 (5).png);"));
         label = new QLabel(centralwidget);
@@ -232,7 +232,7 @@ public:
         labbackinfo = new QLabel(centralwidget);
         labbackinfo->setObjectName(QStringLiteral("labbackinfo"));
         labbackinfo->setGeometry(QRect(50, 290, 251, 31));
-        labbackinfo->setStyleSheet(QLatin1String("border-image: url(:/K9.png);\n"
+        labbackinfo->setStyleSheet(QLatin1String("border-image: url(:/B12.png);\n"
 "color: rgb(255, 255, 255);"));
         pushButton_14 = new QPushButton(centralwidget);
         pushButton_14->setObjectName(QStringLiteral("pushButton_14"));
@@ -252,7 +252,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0));
-        pushButton->setText(QApplication::translate("MainWindow", "\347\231\273\345\275\225", 0));
+        pushButton->setText(QApplication::translate("MainWindow", "\347\231\273     \345\275\225", 0));
         label->setText(QString());
         label_2->setText(QString());
         username->setText(QApplication::translate("MainWindow", "asdasd", 0));

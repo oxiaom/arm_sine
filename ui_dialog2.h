@@ -40,42 +40,80 @@ public:
         if (Dialog2->objectName().isEmpty())
             Dialog2->setObjectName(QStringLiteral("Dialog2"));
         Dialog2->resize(800, 480);
-        Dialog2->setStyleSheet(QStringLiteral("background-color: rgb(85, 0, 255);"));
+        Dialog2->setStyleSheet(QStringLiteral("border-image: url(:/BJBEIJING.png);"));
         listWidget = new QListWidget(Dialog2);
         listWidget->setObjectName(QStringLiteral("listWidget"));
-        listWidget->setGeometry(QRect(20, 20, 651, 101));
-        listWidget->setStyleSheet(QStringLiteral("background-color: rgb(0, 0, 0);"));
+        listWidget->setGeometry(QRect(40, 30, 631, 101));
+        listWidget->setStyleSheet(QLatin1String("\n"
+"border-image: url(:/B12.png);"));
         groupBox = new QGroupBox(Dialog2);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(20, 130, 221, 341));
+        groupBox->setGeometry(QRect(40, 160, 221, 301));
+        groupBox->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);font: 90 16pt \"Aharoni\"; \n"
+"border-image: url(:/B12.png);"));
         listWidget_2 = new QListWidget(groupBox);
         listWidget_2->setObjectName(QStringLiteral("listWidget_2"));
-        listWidget_2->setGeometry(QRect(10, 20, 201, 311));
-        listWidget_2->setStyleSheet(QStringLiteral("background-color: rgb(0, 0, 0);"));
+        listWidget_2->setGeometry(QRect(10, 40, 211, 251));
+        listWidget_2->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);font: 90 8pt \"Aharoni\"; \n"
+"border-image: url(:/B12.png);\n"
+"QListWidget{font: 75 12pt \"Aharoni\";color: rgb(255, 255, 255);border-image: url(:B12.png); padding-top:2px; padding-bottom:2px;padding-left:5px;padding-right:2px;}\n"
+"\n"
+"QListWidget::Item{ margin-top:3px; margin-bottom:3px;margin-left:3px;margin-right:3px;}"));
         groupBox_2 = new QGroupBox(Dialog2);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
-        groupBox_2->setGeometry(QRect(400, 130, 391, 341));
+        groupBox_2->setGeometry(QRect(390, 160, 361, 301));
+        groupBox_2->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);font: 90 16pt \"Aharoni\"; \n"
+"border-image: url(:/B12.png);"));
         listWidget_3 = new QListWidget(groupBox_2);
         listWidget_3->setObjectName(QStringLiteral("listWidget_3"));
-        listWidget_3->setGeometry(QRect(10, 20, 371, 311));
-        listWidget_3->setStyleSheet(QStringLiteral("background-color: rgb(0, 0, 0);"));
+        listWidget_3->setGeometry(QRect(10, 40, 351, 261));
+        listWidget_3->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);font: 90 8pt \"Aharoni\"; \n"
+"border-image: url(:/B12.png);\n"
+"QListWidget{font: 75 12pt \"Aharoni\";color: rgb(255, 255, 255);border-image: url(:B12.png); padding-top:2px; padding-bottom:2px;padding-left:2px;padding-right:2px;}\n"
+"\n"
+"QListWidget::Item{ margin-top:3px; margin-bottom:3px;margin-left:3px;margin-right:3px;}\n"
+"\n"
+" "));
         pushButton = new QPushButton(Dialog2);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(260, 320, 121, 71));
+        pushButton->setGeometry(QRect(270, 320, 111, 61));
+        pushButton->setStyleSheet(QLatin1String(" \n"
+"QPushButton{color: rgb(255, 255, 255);font: 90 16pt \"Aharoni\";  border-radius:10px;}\n"
+"QPushButton{border-image: url(://KR.png);  border-radius:10px;}\n"
+"QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}"));
         pushButton_2 = new QPushButton(Dialog2);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(260, 140, 121, 81));
-        pushButton_2->setStyleSheet(QStringLiteral(""));
+        pushButton_2->setGeometry(QRect(270, 160, 111, 51));
+        pushButton_2->setStyleSheet(QLatin1String(" \n"
+"QPushButton{color: rgb(255, 255, 255);font: 90 16pt \"Aharoni\";  border-radius:10px;}\n"
+"QPushButton{border-image: url(://Yellow.png);  border-radius:10px;}\n"
+"QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}"));
         pushButton_3 = new QPushButton(Dialog2);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(260, 230, 121, 81));
-        pushButton_3->setStyleSheet(QStringLiteral("border-color: rgb(85, 255, 0);"));
+        pushButton_3->setGeometry(QRect(270, 240, 111, 51));
+        pushButton_3->setStyleSheet(QLatin1String(" \n"
+"QPushButton{color: rgb(255, 255, 255);font: 90 16pt \"Aharoni\";  border-radius:10px;}\n"
+"QPushButton{border-image: url(://Yellow.png);  border-radius:10px;}\n"
+"QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}"));
         pushButton_4 = new QPushButton(Dialog2);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setGeometry(QRect(260, 400, 121, 61));
+        pushButton_4->setGeometry(QRect(270, 400, 111, 61));
+        pushButton_4->setStyleSheet(QLatin1String(" \n"
+"QPushButton{color: rgb(255, 255, 255);font: 90 16pt \"Aharoni\";  border-radius:10px;}\n"
+"QPushButton{border-image: url(://KR.png);  border-radius:10px;}\n"
+"QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}"));
         pushButton_5 = new QPushButton(Dialog2);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
-        pushButton_5->setGeometry(QRect(680, 20, 111, 101));
+        pushButton_5->setGeometry(QRect(680, 20, 111, 111));
+        pushButton_5->setStyleSheet(QLatin1String(" \n"
+"QPushButton{color: rgb(255, 255, 255);font: 90 18pt \"Aharoni\";  border-radius:10px;}\n"
+"QPushButton{border-image: url(://KR.png);  border-radius:10px;}\n"
+"QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  \n"
+"QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}"));
 
         retranslateUi(Dialog2);
 
