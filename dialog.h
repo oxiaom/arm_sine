@@ -47,9 +47,19 @@ private slots:
     void rdy();
     void urdy();
     void on_verticalSlider_valueChanged(int value);
+    void on_save_value(int value);
+    void on_save_value1(int value);
+    void on_save_value2(int value);
 
     void localprot_connected();
     void localprot_urdy();
+
+    void on_verticalSlider_2_valueChanged(int value);
+
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::Dialog *ui;
@@ -59,6 +69,7 @@ private:
     //RenderArea *ra;
     int localport;
     bool is_frist=true;
+    int nowmic;
 };
 
 #endif // DIALOG_H

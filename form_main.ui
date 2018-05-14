@@ -162,7 +162,7 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">border-image: url(:/BKh.png);</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <property name="styleSheet">

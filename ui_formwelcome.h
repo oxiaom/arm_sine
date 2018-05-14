@@ -225,7 +225,7 @@ public:
 
         retranslateUi(FormWelcome);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(FormWelcome);
@@ -235,11 +235,11 @@ public:
     {
         FormWelcome->setWindowTitle(QApplication::translate("FormWelcome", "Form", 0));
         pushButton->setText(QApplication::translate("FormWelcome", "NEXT", 0));
-        label_6->setText(QApplication::translate("FormWelcome", "Local WG", 0));
-        label_5->setText(QApplication::translate("FormWelcome", "Local MASK", 0));
-        label_4->setText(QApplication::translate("FormWelcome", "Local IP", 0));
-        label_3->setText(QApplication::translate("FormWelcome", "Sever Port", 0));
-        label->setText(QApplication::translate("FormWelcome", "Sever IP", 0));
+        label_6->setText(QApplication::translate("FormWelcome", "\346\234\254\346\234\272\347\275\221\345\205\263", 0));
+        label_5->setText(QApplication::translate("FormWelcome", "\346\234\254\346\234\272\346\216\251\347\240\201", 0));
+        label_4->setText(QApplication::translate("FormWelcome", "\346\234\254\346\234\272IP", 0));
+        label_3->setText(QApplication::translate("FormWelcome", "\346\234\215\345\212\241\347\253\257\345\217\243", 0));
+        label->setText(QApplication::translate("FormWelcome", "\346\234\215\345\212\241IP", 0));
         pushButton_5->setText(QString());
         pushButton_6->setText(QString());
         pushButton_7->setText(QString());

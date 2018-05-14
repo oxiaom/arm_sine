@@ -45,6 +45,7 @@ public:
     QLabel *label_2;
     QLineEdit *lineEdit;
     QLabel *label;
+    QPushButton *pushButton_14;
 
     void setupUi(QDialog *Dialog_pad)
     {
@@ -186,6 +187,12 @@ public:
         label = new QLabel(Dialog_pad);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(380, 130, 101, 31));
+        pushButton_14 = new QPushButton(Dialog_pad);
+        pushButton_14->setObjectName(QStringLiteral("pushButton_14"));
+        pushButton_14->setGeometry(QRect(380, 60, 91, 51));
+        pushButton_14->setStyleSheet(QLatin1String("border-image: url(:/K6.png);\n"
+"color: rgb(255, 255, 255);\n"
+"font: 75 14pt \"Aharoni\";"));
 
         retranslateUi(Dialog_pad);
 
@@ -211,6 +218,7 @@ public:
         pushButton_4->setText(QApplication::translate("Dialog_pad", "Clear", 0));
         label_2->setText(QApplication::translate("Dialog_pad", "name", 0));
         label->setText(QString());
+        pushButton_14->setText(QApplication::translate("Dialog_pad", "<---", 0));
     } // retranslateUi
 
 };

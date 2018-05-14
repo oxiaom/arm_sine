@@ -87,8 +87,8 @@ int RenderArea::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     return _id;
 }
 struct qt_meta_stringdata_Dialog_t {
-    QByteArrayData data[14];
-    char stringdata0[172];
+    QByteArrayData data[20];
+    char stringdata0[297];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -109,14 +109,23 @@ QT_MOC_LITERAL(8, 91, 3), // "rdy"
 QT_MOC_LITERAL(9, 95, 4), // "urdy"
 QT_MOC_LITERAL(10, 100, 30), // "on_verticalSlider_valueChanged"
 QT_MOC_LITERAL(11, 131, 5), // "value"
-QT_MOC_LITERAL(12, 137, 19), // "localprot_connected"
-QT_MOC_LITERAL(13, 157, 14) // "localprot_urdy"
+QT_MOC_LITERAL(12, 137, 13), // "on_save_value"
+QT_MOC_LITERAL(13, 151, 14), // "on_save_value1"
+QT_MOC_LITERAL(14, 166, 14), // "on_save_value2"
+QT_MOC_LITERAL(15, 181, 19), // "localprot_connected"
+QT_MOC_LITERAL(16, 201, 14), // "localprot_urdy"
+QT_MOC_LITERAL(17, 216, 32), // "on_verticalSlider_2_valueChanged"
+QT_MOC_LITERAL(18, 249, 23), // "on_pushButton_2_clicked"
+QT_MOC_LITERAL(19, 273, 23) // "on_pushButton_3_clicked"
 
     },
     "Dialog\0on_pushButton_clicked\0\0connected\0"
     "disconnected\0error\0QAbstractSocket::SocketError\0"
     "er\0rdy\0urdy\0on_verticalSlider_valueChanged\0"
-    "value\0localprot_connected\0localprot_urdy"
+    "value\0on_save_value\0on_save_value1\0"
+    "on_save_value2\0localprot_connected\0"
+    "localprot_urdy\0on_verticalSlider_2_valueChanged\0"
+    "on_pushButton_2_clicked\0on_pushButton_3_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -126,7 +135,7 @@ static const uint qt_meta_data_Dialog[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      15,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -134,21 +143,33 @@ static const uint qt_meta_data_Dialog[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   59,    2, 0x08 /* Private */,
-       3,    0,   60,    2, 0x08 /* Private */,
-       4,    0,   61,    2, 0x08 /* Private */,
-       5,    1,   62,    2, 0x08 /* Private */,
-       8,    0,   65,    2, 0x08 /* Private */,
-       9,    0,   66,    2, 0x08 /* Private */,
-      10,    1,   67,    2, 0x08 /* Private */,
-      12,    0,   70,    2, 0x08 /* Private */,
-      13,    0,   71,    2, 0x08 /* Private */,
+       1,    0,   89,    2, 0x08 /* Private */,
+       3,    0,   90,    2, 0x08 /* Private */,
+       4,    0,   91,    2, 0x08 /* Private */,
+       5,    1,   92,    2, 0x08 /* Private */,
+       8,    0,   95,    2, 0x08 /* Private */,
+       9,    0,   96,    2, 0x08 /* Private */,
+      10,    1,   97,    2, 0x08 /* Private */,
+      12,    1,  100,    2, 0x08 /* Private */,
+      13,    1,  103,    2, 0x08 /* Private */,
+      14,    1,  106,    2, 0x08 /* Private */,
+      15,    0,  109,    2, 0x08 /* Private */,
+      16,    0,  110,    2, 0x08 /* Private */,
+      17,    1,  111,    2, 0x08 /* Private */,
+      18,    0,  114,    2, 0x08 /* Private */,
+      19,    0,  115,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 6,    7,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   11,
+    QMetaType::Void, QMetaType::Int,   11,
+    QMetaType::Void, QMetaType::Int,   11,
+    QMetaType::Void, QMetaType::Int,   11,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int,   11,
@@ -171,8 +192,14 @@ void Dialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 4: _t->rdy(); break;
         case 5: _t->urdy(); break;
         case 6: _t->on_verticalSlider_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 7: _t->localprot_connected(); break;
-        case 8: _t->localprot_urdy(); break;
+        case 7: _t->on_save_value((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 8: _t->on_save_value1((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 9: _t->on_save_value2((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 10: _t->localprot_connected(); break;
+        case 11: _t->localprot_urdy(); break;
+        case 12: _t->on_verticalSlider_2_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 13: _t->on_pushButton_2_clicked(); break;
+        case 14: _t->on_pushButton_3_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -214,13 +241,13 @@ int Dialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 15)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 15;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 15)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 15;
     }
     return _id;
 }

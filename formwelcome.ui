@@ -26,7 +26,7 @@
     <string notr="true">border-image: url(:/K3.png);</string>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QPushButton" name="pushButton">
@@ -95,7 +95,7 @@ border-image: url(:/K9.png);</string>
 color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Local WG</string>
+         <string>本机网关</string>
         </property>
        </widget>
       </item>
@@ -120,7 +120,7 @@ border-image: url(:/K9.png);</string>
 color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Local MASK</string>
+         <string>本机掩码</string>
         </property>
        </widget>
       </item>
@@ -131,7 +131,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Local IP</string>
+         <string>本机IP</string>
         </property>
        </widget>
       </item>
@@ -142,7 +142,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Sever Port</string>
+         <string>服务端口</string>
         </property>
        </widget>
       </item>
@@ -153,7 +153,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Sever IP</string>
+         <string>服务IP</string>
         </property>
        </widget>
       </item>

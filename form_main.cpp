@@ -340,7 +340,9 @@ void Form_main::on_pushButton_7_clicked() //呼叫
     for( QListWidgetItem *item :  ui->listWidget_2->selectedItems() ){
         int ii = item->data(10004).toJsonValue().toArray().size();
         for(int j =0;j < ii ;j++){
-            list.append( item->data(10004).toJsonValue().toArray().at(j).toString() );
+            if(!list.contains(item->data(10004).toJsonValue().toArray().at(j).toString())){
+                list.append( item->data(10004).toJsonValue().toArray().at(j).toString() );
+            }
         }
     }
 

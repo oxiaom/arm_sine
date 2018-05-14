@@ -104,3 +104,13 @@ void Dialog_pad::on_pushButton_15_clicked()//.
 {
     this->ui->lineEdit->insert(".");
 }
+
+void Dialog_pad::on_pushButton_14_clicked()
+{
+    QString line = this->ui->lineEdit->text();
+    if(line.length()>0){
+        line.chop(1);
+    }
+    this->ui->lineEdit->clear();
+    this->ui->lineEdit->insert(line);
+}

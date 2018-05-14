@@ -6,18 +6,6 @@
 #include <stdlib.h>
 #include <QFile>
 #include"qpainter.h"
-/*
-    QJsonObject obj;
-    obj.insert("cmd","RTCCOMING");
-    obj.insert("userid",this->logs->userid);
-    obj.insert("username",this->logs->username);
-    obj.insert("rdoid",this->logs->userid);
-    obj.insert("snlist",QJsonArray::fromStringList( this->snlist ) );
-    this->tcpsock->write(QJsonDocument(obj).toJson());
-    qDebug()<<QJsonDocument(obj).toJson();
-    tcpsock->abort();
-    tcpsock->connectToHost(QHostAddress(this->logs->severip),41001);
-*/
 
 Dialog::Dialog(BackSystm *bk, QWidget *parent) :
     QDialog(parent),
@@ -46,12 +34,20 @@ Dialog::Dialog(BackSystm *bk, QWidget *parent) :
     this->ui->verticalSlider->setValue(vl);
     f.close();
 
-    mv = new QMovie (":load4.gif");
+    system("amixer cget numid=6 | grep \": value\"  > /tmp/pifile"); //建立管道
+    QFile f2("/tmp/pifile");
+    f2.open(QIODevice::ReadOnly);
+    QByteArray da2 = f2.readAll();
+    int vl2 =  QString(da2.split('=').at(1)).toInt();
+    qDebug()<<"vl2:"<<vl2;
+    this->ui->verticalSlider_2->setValue(vl2);
+    this->ui->verticalSlider_2->setVisible(false);
+    this->ui->verticalSlider->setValue((vl-1)*7+vl2);
+    this->nowmic = (vl-1)*7+vl2;
+    f2.close();
+    mv = new QMovie(":load4.gif");
     this->ui->label->setMovie(mv);
     mv->start();
-    //ra= new RenderArea(this);
-    //this->ui->verticalLayout->addWidget(ra);
-
 }
 
 
@@ -119,7 +115,6 @@ Dialog::~Dialog()
 void Dialog::on_pushButton_clicked()
 {
     this->sock->close();
-
 }
 void Dialog::localprot_connected(){
     QJsonObject obj;
@@ -176,13 +171,7 @@ void Dialog::error(QAbstractSocket::SocketError er){
 }
 void Dialog::rdy(){
      this->sock->readAll().size();
-    QByteArray ba  = this->sock->readAll();
-
-   // float s = rand()%100;
-   // qDebug()<<s;
-   // this->ra->setLevel(s/254.9);
-
-
+     QByteArray ba  = this->sock->readAll();
 }
 
 void Dialog::urdy(){
@@ -210,8 +199,8 @@ void Dialog::localprot_urdy(){
           this->sock->write(datagram.data(),res);
     }
 }
-void Dialog::on_verticalSlider_valueChanged(int value)
-{
+
+void Dialog::on_save_value1(int value){
     QString cmdline;
     cmdline.sprintf("amixer cset numid=5,iface=MIXER,name='Mic1 Boost Volume' %d",value);
     qDebug()<<cmdline;
@@ -221,5 +210,55 @@ void Dialog::on_verticalSlider_valueChanged(int value)
     system(cmdline.toLatin1().data());
 }
 
+void Dialog::on_save_value2(int value){
+    QString cmdline;
+    cmdline.sprintf("amixer cset  numid=6,iface=MIXER,name='ADC Gain Capture Volume' %d",value);
+    qDebug()<<cmdline;
+    system(cmdline.toLatin1().data());
+    cmdline.sprintf("alsactl store");
+    qDebug()<<cmdline;
+    system(cmdline.toLatin1().data());
+
+}
+
+void Dialog::on_save_value(int value){
+    on_save_value1(value%7 + 1);
+    on_save_value2(value%7);
+    this->ui->verticalSlider->setValue(value);
+}
+
+void Dialog::on_verticalSlider_valueChanged(int value)
+{
+    on_save_value(value);
+    this->nowmic = value;
+}
 
 
+
+
+void Dialog::on_verticalSlider_2_valueChanged(int value)
+{
+    QString cmdline;
+    cmdline.sprintf("amixer cset  numid=6,iface=MIXER,name='ADC Gain Capture Volume' %d",value);
+    qDebug()<<cmdline;
+    system(cmdline.toLatin1().data());
+    cmdline.sprintf("alsactl store");
+    qDebug()<<cmdline;
+    system(cmdline.toLatin1().data());
+}
+
+void Dialog::on_pushButton_2_clicked()//+
+{
+
+    if(nowmic < 21 ){
+        on_save_value(++nowmic);
+
+    }
+}
+
+void Dialog::on_pushButton_3_clicked()//-
+{
+    if(nowmic > 1){
+        on_save_value(--nowmic);
+    }
+}

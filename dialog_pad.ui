@@ -320,6 +320,24 @@ font: 75 14pt &quot;Aharoni&quot;;</string>
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_14">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>60</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/K6.png);
+color: rgb(255, 255, 255);
+font: 75 14pt &quot;Aharoni&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;---</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
