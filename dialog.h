@@ -53,6 +53,8 @@ private slots:
 
     void localprot_connected();
     void localprot_urdy();
+    int back_chaonima(int v);
+    int fuck_chaonima(int v);
 
     void on_verticalSlider_2_valueChanged(int value);
 

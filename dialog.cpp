@@ -43,7 +43,7 @@ Dialog::Dialog(BackSystm *bk, QWidget *parent) :
     this->ui->verticalSlider_2->setValue(vl2);
     this->ui->verticalSlider_2->setVisible(false);
     this->ui->verticalSlider->setValue((vl-1)*7+vl2);
-    this->nowmic = (vl-1)*7+vl2;
+    this->nowmic = fuck_chaonima( (vl)*10+vl2 );
     f2.close();
     mv = new QMovie(":load4.gif");
     this->ui->label->setMovie(mv);
@@ -116,6 +116,7 @@ void Dialog::on_pushButton_clicked()
 {
     this->sock->close();
 }
+
 void Dialog::localprot_connected(){
     QJsonObject obj;
     obj.insert("cmd","RTCCOMING");
@@ -130,6 +131,7 @@ void Dialog::localprot_connected(){
     connect(udpk,SIGNAL(readyRead()),this,SLOT(localprot_urdy()));
     //system("cat /mnt/1.mp3 > /tmp/mp3_in_fifo");
 }
+
 void Dialog::connected(){
     QJsonObject obj;
     obj.insert("cmd","RTCCOMING");
@@ -220,11 +222,81 @@ void Dialog::on_save_value2(int value){
     system(cmdline.toLatin1().data());
 
 }
+int Dialog::fuck_chaonima(int v){
+    if(v == 01 ){
+        return 1;
+    }else if(v  == 02){
+        return 2;
+    }else if(v  == 03){
+        return 3;
+    }else if(v  == 04){
+        return 4;
+    }else if(v  == 05){
+        return 5;
+    }else if(v  == 06){
+        return 6;
+    }else if(v  == 07){
+        return 7;
+    }else if(v  == 11){
+        return 8;
+    }else if(v  == 12){
+        return 9;
+    }else if(v  == 13){
+        return 10;
+    }else if(v  == 14){
+        return 11;
+    }else if(v  == 15){
+        return 12;
+    }else if(v  == 16){
+        return 13;
+    }else if(v  == 17){
+        return 14;
+    }else{
+        return 7;
+    }
+}
+
+int Dialog::back_chaonima(int v){
+    if(v == 1 ){
+        return 01;
+    }else if(v  == 2){
+        return 02;
+    }else if(v  == 3){
+        return 03;
+    }else if(v  == 4){
+        return 04;
+    }else if(v  == 5){
+        return 05;
+    }else if(v  == 6){
+        return 06;
+    }else if(v  == 7){
+        return 07;
+    }else if(v  == 8){
+        return 11;
+    }else if(v  == 9){
+        return 12;
+    }else if(v  == 10){
+        return 13;
+    }else if(v  == 11){
+        return 14;
+    }else if(v  == 12){
+        return 15;
+    }else if(v  == 13){
+        return 16;
+    }else if(v  == 14){
+        return 17;
+    }else{
+        return 07;
+    }
+
+}
 
 void Dialog::on_save_value(int value){
-    on_save_value1(value%7 + 1);
-    on_save_value2(value%7);
-    this->ui->verticalSlider->setValue(value);
+    if(value < 15 ){
+        on_save_value1( back_chaonima(value)/10 );
+        on_save_value2( back_chaonima(value)%10 );
+        this->ui->verticalSlider->setValue( value );
+    }
 }
 
 void Dialog::on_verticalSlider_valueChanged(int value)
@@ -233,13 +305,10 @@ void Dialog::on_verticalSlider_valueChanged(int value)
     this->nowmic = value;
 }
 
-
-
-
 void Dialog::on_verticalSlider_2_valueChanged(int value)
 {
     QString cmdline;
-    cmdline.sprintf("amixer cset  numid=6,iface=MIXER,name='ADC Gain Capture Volume' %d",value);
+    cmdline.sprintf("amixer cset numid=6,iface=MIXER,name='ADC Gain Capture Volume' %d",value);
     qDebug()<<cmdline;
     system(cmdline.toLatin1().data());
     cmdline.sprintf("alsactl store");
@@ -249,10 +318,8 @@ void Dialog::on_verticalSlider_2_valueChanged(int value)
 
 void Dialog::on_pushButton_2_clicked()//+
 {
-
-    if(nowmic < 21 ){
+    if(nowmic < 13 ){
         on_save_value(++nowmic);
-
     }
 }
 

@@ -91,7 +91,7 @@ public:
 "}  \n"
 "  \n"
 ""));
-        verticalSlider->setMaximum(21);
+        verticalSlider->setMaximum(14);
         verticalSlider->setValue(3);
         verticalSlider->setOrientation(Qt::Vertical);
         label = new QLabel(Dialog);

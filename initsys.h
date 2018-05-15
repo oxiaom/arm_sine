@@ -30,7 +30,6 @@ public slots:
     QVariant getport_shujuku();//获取数据端口
 
     bool get_isconfig();
-
     void setautologin(QVariant r);//保存自动登录状态
     void setremem(QVariant r);//保存记住密码状态
     void setadmin(QVariant r);//保存用户名
