@@ -48,6 +48,8 @@ Dialog::Dialog(BackSystm *bk, QWidget *parent) :
     mv = new QMovie(":load4.gif");
     this->ui->label->setMovie(mv);
     mv->start();
+
+    this->ui->verticalSlider->setValue( this->nowmic );
 }
 
 
@@ -223,33 +225,33 @@ void Dialog::on_save_value2(int value){
 
 }
 int Dialog::fuck_chaonima(int v){
-    if(v == 01 ){
+    if(v == 05 ){
         return 1;
-    }else if(v  == 02){
-        return 2;
-    }else if(v  == 03){
-        return 3;
-    }else if(v  == 04){
-        return 4;
-    }else if(v  == 05){
-        return 5;
     }else if(v  == 06){
-        return 6;
+        return 2;
     }else if(v  == 07){
-        return 7;
+        return 3;
     }else if(v  == 11){
-        return 8;
+        return 4;
     }else if(v  == 12){
-        return 9;
+        return 5;
     }else if(v  == 13){
-        return 10;
+        return 6;
     }else if(v  == 14){
-        return 11;
+        return 7;
     }else if(v  == 15){
-        return 12;
+        return 8;
+    }else if(v  == 21){
+        return 9;
+    }else if(v  == 22){
+        return 10;
     }else if(v  == 16){
-        return 13;
+        return 11;
     }else if(v  == 17){
+        return 12;
+    }else if(v  == 23){
+        return 13;
+    }else if(v  == 24){
         return 14;
     }else{
         return 7;
@@ -257,44 +259,44 @@ int Dialog::fuck_chaonima(int v){
 }
 
 int Dialog::back_chaonima(int v){
-    if(v == 1 ){
-        return 01;
-    }else if(v  == 2){
-        return 02;
-    }else if(v  == 3){
-        return 03;
-    }else if(v  == 4){
-        return 04;
-    }else if(v  == 5){
+    if(v ==  1){
         return 05;
-    }else if(v  == 6){
+    }else if(v  ==  2){
         return 06;
-    }else if(v  == 7){
+    }else if(v  ==  3){
         return 07;
-    }else if(v  == 8){
+    }else if(v  ==  4){
         return 11;
-    }else if(v  == 9){
+    }else if(v  ==  5){
         return 12;
-    }else if(v  == 10){
+    }else if(v  ==  6){
         return 13;
-    }else if(v  == 11){
+    }else if(v  ==  7){
         return 14;
-    }else if(v  == 12){
+    }else if(v  ==  8){
         return 15;
-    }else if(v  == 13){
+    }else if(v  ==  9){
+        return 21;
+    }else if(v  == 10){
+        return 22;
+    }else if(v  == 11){
         return 16;
-    }else if(v  == 14){
+    }else if(v  == 12){
         return 17;
+    }else if(v  == 13){
+        return 23;
+    }else if(v  == 14){
+        return 24;
     }else{
         return 07;
     }
-
 }
 
 void Dialog::on_save_value(int value){
     if(value < 15 ){
         on_save_value1( back_chaonima(value)/10 );
         on_save_value2( back_chaonima(value)%10 );
+        this->ui->label_2->setText(QString::number(value));
         this->ui->verticalSlider->setValue( value );
     }
 }
@@ -325,7 +327,7 @@ void Dialog::on_pushButton_2_clicked()//+
 
 void Dialog::on_pushButton_3_clicked()//-
 {
-    if(nowmic > 1){
+    if(nowmic > 2){
         on_save_value(--nowmic);
     }
 }

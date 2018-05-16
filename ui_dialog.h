@@ -30,6 +30,7 @@ public:
     QSlider *verticalSlider_2;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QLabel *label_2;
 
     void setupUi(QDialog *Dialog)
     {
@@ -91,8 +92,10 @@ public:
 "}  \n"
 "  \n"
 ""));
-        verticalSlider->setMaximum(14);
-        verticalSlider->setValue(3);
+        verticalSlider->setMaximum(13);
+        verticalSlider->setPageStep(1);
+        verticalSlider->setValue(7);
+        verticalSlider->setSliderPosition(7);
         verticalSlider->setOrientation(Qt::Vertical);
         label = new QLabel(Dialog);
         label->setObjectName(QStringLiteral("label"));
@@ -161,6 +164,12 @@ public:
 "QPushButton{border-image: url(://KR.png);  border-radius:10px;}\n"
 "QPushButton:hover{border-image: url(:/K6.png);  border-radius:10px;}  \n"
 "QPushButton:pressed{border-image: url(:/K6.png);  border-radius:10px;}"));
+        label_2 = new QLabel(Dialog);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(730, 180, 41, 31));
+        label_2->setStyleSheet(QLatin1String("font: 75 15pt \"Aharoni\";\n"
+"border-image: url(:/B12.png);\n"
+"color: rgb(255, 255, 255);"));
 
         retranslateUi(Dialog);
 
@@ -174,6 +183,7 @@ public:
         label->setText(QString());
         pushButton_2->setText(QApplication::translate("Dialog", "+", 0));
         pushButton_3->setText(QApplication::translate("Dialog", "-", 0));
+        label_2->setText(QString());
     } // retranslateUi
 
 };
