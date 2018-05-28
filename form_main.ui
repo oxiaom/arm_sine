@@ -32,7 +32,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-image: url(:/BJ1.png);</string>
+    <string notr="true">border-image: url(:/BJ1.png);font: 75 9pt &quot;微软雅黑&quot;;</string>
    </property>
    <widget class="QPushButton" name="pushButtonduidian">
     <property name="geometry">
@@ -159,7 +159,8 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/BKh.png);</string>
+     <string notr="true">border-image: url(:/BKh.png);
+font: 75 9pt &quot;微软雅黑&quot;;</string>
     </property>
     <property name="currentIndex">
      <number>1</number>
